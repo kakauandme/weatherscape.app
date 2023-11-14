@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "pages:dev": "wrangler pages dev --compatibility-date=2023-10-30 --proxy 5173 -- npm run dev",
+    "pages:dev": "npx wrangler pages dev -- npm run dev",
     "pages:deploy": "npm run build && wrangler pages deploy ./dist"
   },
   "dependencies": {
