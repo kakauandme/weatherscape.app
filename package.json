@@ -7,11 +7,12 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "format": "prettier --write src/",
-    "pages:dev": "npx wrangler pages dev -- npm run dev",
+    "format": "prettier --write src/ functions/",
+    "pages:dev": "npx wrangler pages dev --compatibility-date=2023-10-30 --proxy 5173  --ip '127.0.0.1' -- npm run dev",
     "pages:deploy": "npm run build && wrangler pages deploy ./dist"
   },
   "dependencies": {
+    "openai": "^4.17.5",
     "pinia": "^2.1.7",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"

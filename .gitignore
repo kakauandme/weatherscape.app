@@ -17,6 +17,8 @@ coverage
 /cypress/videos/
 /cypress/screenshots/
 
+.wrangler/tmp/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -26,3 +28,4 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+.dev.vars
