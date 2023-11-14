@@ -1,4 +1,4 @@
-# weatherscape.app
+# weatherscape-app
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -19,7 +19,7 @@ npm install
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+pm run pages:dev
 ```
 
 ### Compile and Minify for Production
@@ -28,8 +28,16 @@ npm run dev
 npm run build
 ```
 
+### Deploy 
+
+```sh
+npm run pages:deploy
+```
+
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
+npm run format
 npm run lint
 ```
+
